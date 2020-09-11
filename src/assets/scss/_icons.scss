@@ -1,0 +1,72 @@
+
+/*=============================================
+=                   Icons                     =
+=============================================*/
+
+
+:root {
+  --icon-xs: 16px;
+  --icon-sm: 24px;
+  --icon-md: 32px;
+  --icon-lg: 48px;
+  --icon-xl: 64px;
+}
+
+.icon {
+  display: inline-block;
+  color: var(--color-icon-primary);
+  height: 1em;
+  width: 1em;
+  line-height: 1;
+}
+
+
+
+/*----------  Icon size  ----------*/
+
+.icon--xs {
+  font-size: var(--icon-xs);
+}
+
+.icon--sm {
+  font-size: var(--icon-sm);
+}
+
+.icon--md {
+  font-size: var(--icon-md);
+}
+
+.icon--lg {
+  font-size: var(--icon-lg);
+}
+
+.icon--xl {
+  font-size: var(--icon-xl);
+}
+
+
+@supports(--css: variables) {
+  .theme--dark {
+    --component-background: var(--black);
+    --color-text: var(--gray-4);
+    --color-icon-primary: #fff;
+    //..other relevant css variables
+  }
+}
+
+
+/*----------  add this class to parent element that contains icon + text  ----------*/
+
+.icon-text-aligner {
+  display: flex;
+  align-items: center;
+
+  > *:nth-child(2) {
+    margin-left: var(--space-xxs);
+  }
+
+  .icon {
+    color: inherit;
+    flex-shrink: 0;
+  }
+}
