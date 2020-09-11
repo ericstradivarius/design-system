@@ -46,7 +46,6 @@
   // main button
   background-color: var(--btn-primary-bg);
   color: var(--btn-primary-label);
-  @include fontSmooth;
 
   &:visited {
       color: var(--btn-primary-label);
@@ -79,7 +78,6 @@
   // used to draw special attention to the button (e.g. destructive actions)
   background-color: var(--btn-accent-bg);
   color: var(--btn-accent-label);
-  @include fontSmooth;
 
   &:visited {
       color: var(--btn-accent-label);

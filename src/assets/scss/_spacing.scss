@@ -27,16 +27,6 @@
 }
 
 
-/*----------  optional - edit space unit and padding of all components at a specific breakpoint  ----------*/
-
-@include breakpoint(md) {
-  :root {
-      --space-unit: 1.25em;
-      --component-padding: var(--space-md);
-  }
-}
-
-
 /*----------  vertical margins  ----------*/
 
 .margin-top, .margin-top--md {
@@ -77,46 +67,4 @@
 
 .margin-bottom--xxl {
   margin-bottom: var(--space-xxl);
-}
-
-@include breakpoint(md) {
-  .margin-top, .margin-top--md {
-      margin-top: var(--space-lg);
-  }
-  
-  .margin-top--sm {
-      margin-top: var(--space-md);
-  }
-  
-  .margin-top--lg {
-      margin-top: var(--space-xl);
-  }
-  
-  .margin-top--xl {
-      margin-top: var(--space-xxl);
-  }
-  
-  .margin-top--xxl {
-      margin-top: var(--space-xxxl);
-  }
-
-  .margin-bottom, .margin-bottom--md {
-      margin-bottom: var(--space-lg);
-  }
-  
-  .margin-bottom--sm {
-      margin-bottom: var(--space-md);
-  }
-  
-  .margin-bottom--lg {
-      margin-bottom: var(--space-xl);
-  }
-  
-  .margin-bottom--xl {
-      margin-bottom: var(--space-xxl);
-  }
-  
-  .margin-bottom--xxl {
-      margin-bottom: var(--space-xxxl);
-  }
 }
