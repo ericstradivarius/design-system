@@ -1,11 +1,6 @@
-
 /*=============================================
 =                   Buttons                   =
 =============================================*/
-
-
-
-
 
 :root {
   --btn-font-size: 1em;
@@ -28,16 +23,16 @@
   font-size: var(--btn-font-size);
   color: var(--color-link);
 
-  transition: .2s;
+  transition: 0.2s;
 
   &:active {
-      transition: none;
+    transition: none;
   }
 
   .icon {
-      /* icon inherits color of button label */
-      color: inherit;
-      flex-shrink: 0;
+    /* icon inherits color of button label */
+    color: inherit;
+    flex-shrink: 0;
   }
 }
 
@@ -48,15 +43,16 @@
   color: var(--btn-primary-label);
 
   &:visited {
-      color: var(--btn-primary-label);
+    color: var(--btn-primary-label);
   }
 
   &:hover {
-      background-color: var(--btn-primary-hover);
+    background-color: var(--btn-primary-hover);
+    color: var(--btn-secondary-label);
   }
 
   &:active {
-      background-color: var(--btn-primary-active);
+    background-color: var(--btn-primary-active);
   }
 }
 
@@ -66,11 +62,11 @@
   color: var(--btn-secondary-label);
 
   &:visited {
-      color: var(--btn-secondary-label);
+    color: var(--btn-secondary-label);
   }
 
   &:active {
-      background-color: var(--btn-secondary-active);
+    background-color: var(--btn-secondary-active);
   }
 }
 
@@ -80,18 +76,17 @@
   color: var(--btn-accent-label);
 
   &:visited {
-      color: var(--btn-accent-label);
+    color: var(--btn-accent-label);
   }
 
   &:hover {
-      background-color: var(--btn-accent-hover);
+    background-color: var(--btn-accent-hover);
   }
 
   &:active {
-      background-color: var(--btn-accent-active);
+    background-color: var(--btn-accent-active);
   }
 }
-
 
 /*----------  Feedback  ----------*/
 
@@ -103,10 +98,9 @@
   opacity: 0.6;
 
   &:visited {
-      color: var(--btn-disabled-label);
+    color: var(--btn-disabled-label);
   }
 }
-
 
 /*----------  Button size  ----------*/
 
@@ -128,7 +122,6 @@
   justify-content: center;
 }
 
-
 /*----------  Buttons group  ----------*/
 
 .btns {
@@ -137,11 +130,11 @@
   margin-bottom: calc(-1 * var(--space-xs));
 
   > * {
-      margin-right: var(--space-xs);
-      margin-bottom: var(--space-xs);
+    margin-right: var(--space-xs);
+    margin-bottom: var(--space-xs);
 
-      &:last-of-type {
-          margin-right: 0;
-      }
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 }
